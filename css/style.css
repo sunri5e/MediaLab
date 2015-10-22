@@ -362,7 +362,7 @@ h1{
 	border-right: 3px solid #2075bc;
 }
 
-.article-info *{
+.article-info *, .education-info *{
 	display: inline-block;
 	font-size: 16px;
 }
@@ -371,11 +371,9 @@ h1{
 	padding-right: 20px;
 }
 
-.main-title:after{
 
-}
 
-.article-info{
+.article-info, .education-info{
 	text-align: center;
 	width: 60%;
 	margin-bottom: 20px;
@@ -545,6 +543,118 @@ blockquote:after {
 	background-repeat: no-repeat;
 }
 
+/*EDUCATION*/
+
+.education-date{
+	float: left;
+}
+.education-term{
+	color: #2075bc;
+}
+.education-comments{
+	float: right;
+}
+
+.education-title:after{
+	width: 80%;
+	left: 0;
+}
+.teacher img{
+    float: right;
+    width: 220px;
+    padding-left: 20px;
+}
+
+.teacher p, .about p{
+	text-align: justify;
+	text-indent: 20px;
+}
+
+.about p{
+	padding-right: 10px;
+}
+
+.education-block h3 {
+	color: #2075bc;
+	font-weight: bold;
+}
+
+h3.teacher-name{
+	color: #000;
+	width: 104px;
+	display: inline-block;
+	margin-top: 0;
+}
+
+.education-block .about img{
+	width: 250px;
+	float: right;
+	margin-right: -10px;
+	padding-left: 20px;
+}
+.education-block ul{
+	list-style: none;
+	margin-bottom: 20px;
+}
+.education-block ul li:before{
+	content: '';
+	background-image: url(../images/marker.png);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: -30px;
+}
+.schedule ul li{
+	float: left;
+	width: 50%;
+	padding: 0 15px;
+	margin-top: 10px;
+}
+.schedule ul li:nth-child(2n){
+	float: right;
+}
+
+.big-button{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	padding: 10px 40px;
+	background-color: #2075bc;
+	cursor: pointer;
+	width: 250px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.big-button:hover{
+	text-decoration: none;
+	color: #fff;
+}
+
+.video-block{
+	margin-top: 30px;
+	padding: 20px 0;
+	background-color: #e7e8e9;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.video-block iframe{
+	display: block;
+	margin: 0 auto;
+}
+
+.materials h3{
+	color: #2075bc;
+	font-weight: bold;
+
+}
+.materials p{
+	text-indent: 20px;
+}
 
 @media only screen and (max-width: 768px) {
 	#navbar-collapse1{
@@ -600,7 +710,7 @@ blockquote:after {
 	.border-right{
 		border: none;
 	}
-	.article-info{
+	.article-info, .education-info{
 		width: 100%;
 	}
 
@@ -613,6 +723,9 @@ blockquote:after {
 	}
 	.main-title:after{
 		width: 100% !important;
+	}
+	.education-title:after{
+	width: 100%;
 	}
 
 }
@@ -638,7 +751,7 @@ blockquote:after {
 		border: none;
 	}
 
-	.article-info{
+	.article-info, .education-info{
 		width: 100%;
 	}
 
@@ -647,6 +760,9 @@ blockquote:after {
 	}
 	.article-block .block-title:after{
 		width: 100%;
+	}
+		.education-title:after{
+	width: 100%;
 	}
 
 }
