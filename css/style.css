@@ -175,6 +175,10 @@
     margin-bottom: 30px;
 }
 
+.education-title:after {
+    border-bottom-width: 2px !important;
+}
+
 .education-descr {
     color: #6d6e71;
     font-size: 14px;
@@ -678,6 +682,92 @@ h3.teacher-name {
     text-indent: 20px;
 }
 
+
+/*LEARN*/
+
+.learn-title:after {
+    border-bottom-width: 2px
+}
+
+.learn-item {
+    border-bottom: 2px solid #a7aaac;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.learn-item-title {
+    font-size: 21px;
+    color: #2075bc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.learn-teacher {
+    width: 400px;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.learn-img {
+    padding: 15px;
+    border: 1px solid #2075bc;
+    display: inline-block;
+    border-radius: 100px;
+    float: left;
+}
+
+.learn-img img {
+    width: 110px;
+}
+
+.learn-teach-name {
+    float: left;
+    display: inline-block;
+    width: 150px;
+    margin: 20px 10px;
+}
+
+.blue-text {
+    color: #2075bc;
+}
+
+.learn-term {
+    color: #2075bc;
+    float: left;
+    margin-left: 10px;
+}
+
+.learn-descr {
+    display: block;
+    color: #6d6e71;
+    margin: 20px 0;
+    height: 60px;
+}
+
+.learn-btn {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 0;
+    font-size: 17px;
+    background-color: #2075bc;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-left: 50px;
+}
+
+.learn-btn + .learn-btn {
+    float: right;
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+.learn-btn:hover {
+    background-color: #2f70b6;
+    color: #fff;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 768px) {
     #navbar-collapse1 {
         float: none !important;
@@ -738,6 +828,20 @@ h3.teacher-name {
     }
     .education-title:after {
         width: 100%;
+    }
+    .learn-descr {
+        height: auto;
+    }
+    a.learn-btn {
+        display: block;
+        float: none !important;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a.learn-btn +a.learn-btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
